@@ -35,10 +35,11 @@ function inspoPhrases() {
 
 
 http.createServer(function (req, res) {
-    res.writeHead(200, { "Content-Type": "text/html" });
+    res.writeHead(200, { "Content-Type": "text/html; charset:UTF-8" });
     res.end(
         `<html>
             <head>
+                <meta charset="UTF-8">
                 <style>
                     h1 {
                         position: absolute;
