@@ -46,10 +46,14 @@ http.createServer(function (req, res) {
                         transform: translate(-50%, -50%);
                         text-align: center;
                     }
+                    p {
+                        text-align: center;
+                    }
                 </style>
             </head>
             <body>
                 <h1>${inspoPhrases()}</h1>
+                <p>${mySecretKey}</p>
             </body>
         </html>
       `)
