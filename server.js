@@ -3,11 +3,14 @@ const http = require("http");
 const dotenv = require("dotenv");
 dotenv.config();
 
+console.log(process.env.PORT)
+console.log(process.env.HOST)
+console.log(process.env.MY_SECRET_KEY)
+
 const port = process.env.PORT || 3000;
 const host = process.env.HOST || "localhost";
 
 const mySecretKey = process.env.MY_SECRET_KEY
-console.log(process.env.MY_SECRET_KEY)
 
 
 http.createServer(function (req, res) {
