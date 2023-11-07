@@ -25,7 +25,7 @@ function inspoPhrases() {
         "Le tue sfide presenti preparano il terreno per le tue vittorie future.",
         '"Il solo modo per fare un ottimo lavoro è amare ciò che fai." - Steve Jobs'
     ];
-    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    const randomNumber = Math.floor(Math.random() * phrases.length);
     const randomPhrase = phrases[randomNumber];
     console.log(randomNumber);
 
